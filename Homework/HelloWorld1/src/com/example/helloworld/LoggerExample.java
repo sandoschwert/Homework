@@ -1,5 +1,5 @@
 package com.example.helloworld;
-import org.apache.log4j.Logger;
+import org.apache.log4j.*;
 import java.io.*;
 import java.util.*;
 import java.sql.SQLException;
@@ -8,11 +8,11 @@ import java.sql.SQLException;
  */
 public class LoggerExample {
 
-    static Logger log = Logger.getLogger(LoggerExample.class.getName());
+    private final Logger logger = Logger.getLogger(this.getClass());
 
     public void LogIt() {
 
-        log.info("Log this message - It Worked!");
+        logger.info("Log this message - It Worked!");
         //OFF, DEBUG, INFO, ERROR, WARN, FATAL, and ALL
     }
 
